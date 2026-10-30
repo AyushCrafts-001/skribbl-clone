@@ -7,7 +7,7 @@ A full-stack, real-time multiplayer drawing and guessing game inspired by **Skri
 ## 🌐 Live Deployment
 
 - **Live Frontend:** [https://skribbl-clone-6u0z.onrender.com](https://skribbl-clone-6u0z.onrender.com)
-- **Backend API Health:** [https://skribbl-clone-api-1gcx.onrender.com/api/health](https://skribbl-clone-api-1gcx.onrender.com/api/health)
+- **Backend API:** [https://skribbl-clone-api-1gcx.onrender.com/api/health](https://skribbl-clone-api-1gcx.onrender.com/api/health)
 
 ---
 
@@ -355,10 +355,4 @@ http://localhost:5173
 **Designed and Developed by Ayush Saxena**
 
 - 💼 **LinkedIn:** [ayush-saxena-developer](https://www.linkedin.com/in/ayush-saxena-developer)
-- 🐙 **GitHub:** [@AyushCrafts-001](https://github.com/AyushCrafts-001)
-- 📂 **Repository:** [AyushCrafts-001/skribbl-clone](https://github.com/AyushCrafts-001/skribbl-clone)
-
----
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
+- ---
