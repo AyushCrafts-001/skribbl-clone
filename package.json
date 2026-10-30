@@ -1,0 +1,22 @@
+{
+  "name": "skribbl-clone",
+  "version": "1.0.0",
+  "description": "Full-stack MERN Skribbl.io clone with real-time WebSockets, canvas drawing, and interactive multiplayer gaming.",
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "start": "node server/src/index.js"
+  },
+  "keywords": [
+    "skribbl",
+    "mern",
+    "websockets",
+    "socket.io",
+    "canvas",
+    "multiplayer",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT"
+}
