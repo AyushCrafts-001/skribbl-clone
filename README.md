@@ -13,59 +13,12 @@ A full-stack, real-time multiplayer drawing and guessing game inspired by **Skri
 
 ## 📸 Application Screenshots
 
-### 1. Room Lobby and Configuration UI
-Host creates rooms with custom settings (players, rounds, draw time, word count), custom avatar picker, and invite link/code.
+<img width="640" height="867" alt="Screenshot 2026-10-30 120128" src="https://github.com/user-attachments/assets/c2eb8425-a536-4f17-a28f-cb646011ac25" />
+<img width="785" height="895" alt="Screenshot 2026-10-30 120141" src="https://github.com/user-attachments/assets/c1149dd6-fa9b-45cc-b075-df546fc13131" />
+<img width="1147" height="897" alt="Screenshot 2026-10-30 120210" src="https://github.com/user-attachments/assets/7504fa1b-5608-45d7-bfbc-89a43cd99726" />
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                        🎮 SKRIBBL.IO CLONE                             │
-│                                                                        │
-│   Enter your name: [ Ayush          ]  Avatar: [ 🦊 ]                  │
-│                                                                        │
-│   ┌──────────────────────────────┐  ┌──────────────────────────────┐   │
-│   │     🎲 Play (Public Room)    │  │   ➕ Create Private Room     │   │
-│   └──────────────────────────────┘  └──────────────────────────────┘   │
-│                                                                        │
-│   Room Settings:                                                       │
-│   • Players: 2 - 20        • Rounds: 2 - 10                            │
-│   • Draw Time: 15 - 240s   • Word Choices: 3                           │
-└────────────────────────────────────────────────────────────────────────┘
-```
 
-### 2. Real-Time Canvas Sync and Chat Guessing
-Real-time stroke broadcast, color palette, brush sizes, undo/clear, letter hints, and anti-spoiler chat protection.
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│ ⏱️ 45s  │  ROUND 2 / 3  │  WORD: _ E _ G _ I _  │  Category: Animals   │
-├─────────────────────────┬──────────────────────────────┬───────────────┤
-│ 🏆 LEADERBOARD          │ 🖌️ CANVAS (800x600 Virtual)   │ 💬 LIVE CHAT  │
-│                         │                              │               │
-│ 1. Ayush    1,450 pts   │      [ Synchronized ]        │ Rahul: bird?  │
-│ 2. Priya ✏️   980 pts   │      [ Real-Time    ]        │ Amit: cat?    │
-│ 3. Rahul      820 pts   │      [ Drawing Area ]        │ Ayush guessed │
-│ 4. Amit       640 pts   │                              │ the word! 🎉  │
-│                         ├──────────────────────────────┤               │
-│                         │ 🎨 Colors • Brush • Undo     │ [Type guess]  │
-└─────────────────────────┴──────────────────────────────┴───────────────┘
-```
-
-### 3. Game Over and Winner Podium
-Final scores, winner celebration, medal podium, and rematch options.
-
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                         🎉 GAME OVER! 🎉                              │
-│                                                                        │
-│                     🥇 1st Place: Ayush (2,350 pts)                    │
-│                     🥈 2nd Place: Priya (1,820 pts)                    │
-│                     🥉 3rd Place: Rahul (1,410 pts)                    │
-│                                                                        │
-│                    [ Play Again ]   [ Return to Lobby ]                │
-└────────────────────────────────────────────────────────────────────────┘
-```
-
----
 
 ## 🏗️ Architecture Overview
 
