@@ -14,7 +14,7 @@ A real-time multiplayer drawing and guessing game built with React, Vite, Node.j
 - Time-based scoring: `round(100 + 400 * timeLeft / roundDuration)`; the drawer earns 50 points per correct guess
 - Leaderboard, host controls, and customizable avatars
 
-## Technology
+## Technology Stack
 
 - **Frontend:** React 19, Vite, React Router, HTML Canvas, Axios
 - **Backend:** Node.js, Express 5, Socket.IO 4
@@ -91,4 +91,4 @@ Open `http://localhost:5173`.
 
 ## Author
 
-**Ayush Saxena** | [LinkedIn](https://www.linkedin.com/in/ayush-saxena-developer) | [GitHub](https://github.com/AyushCrafts-001/skribbl-clone)
+Designed and Developed by **Ayush Saxena** | [LinkedIn](https://www.linkedin.com/in/ayush-saxena-developer) | [GitHub](https://github.com/AyushCrafts-001/skribbl-clone)
