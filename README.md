@@ -341,7 +341,7 @@ http://localhost:5173
 ---
 
 ### 3. Play Multiplayer Locally
-1. Open `http://localhost:5173` in Browser Window 1.
+1. Open `http://localhost:5173` in Browser Window 11.
 2. Enter your name, customize your avatar, and click **Create Private Room**.
 3. Copy the room code or invite link.
 4. Open an **Incognito / Private Window** (or a second browser) at `http://localhost:5173`.
