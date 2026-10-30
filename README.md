@@ -1,94 +1,33 @@
-# Skribbl.io Clone
-
-A real-time multiplayer drawing and guessing game built with React, Vite, Node.js, Express, and Socket.IO.
-
-**Live game:** [Frontend](https://skribbl-clone-6u0z.onrender.com) | [Backend](https://skribbl-clone-api-1gcx.onrender.com/api/health)
-
-## Features
-
-- Public matchmaking and private rooms with configurable settings
-- Turn-based word selection (15-second choice), drawing, hints, and round transitions
-- Room settings support 2-20 players and 1-10 rounds
-- Live canvas, chat, and game-state updates over Socket.IO
-- Pen, eraser, flood fill, undo, clear, and late-join stroke replay
-- Time-based scoring: `round(100 + 400 * timeLeft / roundDuration)`; the drawer earns 50 points per correct guess
-- Leaderboard, host controls, and customizable avatars
-
-## Technology Stack
-
-- **Frontend:** React 19, Vite, React Router, HTML Canvas, Axios
-- **Backend:** Node.js, Express 5, Socket.IO 4
-- **Database:** MongoDB with Mongoose (optional)
-- **Hosting:** Render static site and web service
-
+ 🎨 Skribbl.io Clone - Real-Time Multiplayer Drawing Game
+A full-stack multiplayer drawing and guessing game inspired by Skribbl.io. It features a server-managed turn-based game loop, live canvas synchronization, time-based scoring, and an object-oriented game engine.
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20App-brightgreen?style=for-the-badge&logo=render)](https://skribbl-clone-6u0z.onrender.com)
+[![Video Walkthrough](https://img.shields.io/badge/YouTube-Video%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/dsrWwDutcLw?si=jVqoMPMQlV90A0oH)
+[![React](https://img.shields.io/badge/React%2019-Vite-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express%205-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-Real--Time-black?style=for-the-badge&logo=socket.io)](https://socket.io/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+## Live deployment
+A modern, full-stack, real-time multiplayer drawing and guessing game inspired by [skribbl.io](https://skribbl.io). Built with an authoritative **Object-Oriented game server**, real-time **WebSockets (Socket.IO)**, a resolution-independent **HTML5 Canvas engine**, dynamic time-decay scoring, and an interactive glassmorphic UI.
+- **Frontend:** https://skribbl-clone-6u0z.onrender.com
+- **Backend health:** https://skribbl-clone-api-1gcx.onrender.com/api/health
+- **Demo video:** https://youtu.be/dsrWwDutcLw?si=jVqoMPMQlV90A0oH
+---
 ## Application screens
-
-- **Home and room setup:** Avatar selection, quick match, room-code join, and room configuration.
-- **Waiting room:** Invite code, player list, room settings, and chat.
-- **Game screen:** Synchronized canvas, drawing controls, timer, word hints, chat, and leaderboard.
-
-## Project structure
-
-
-skribbl-clone/
-|-- client/
-|   |-- public/
-|   |-- src/
-|   |   |-- assets/
-|   |   |-- components/   Canvas, chat, avatars, modals, leaderboard
-|   |   |-- pages/        Home and room lobby
-|   |   |-- services/     Axios API and Socket.IO clients
-|   |   |-- utils/        Game constants and sound effects
-|   |   |-- App.jsx
-|   |   |-- App.css
-|   |   |-- index.css
-|   |   `-- main.jsx
-|   |-- package.json
-|   `-- package-lock.json
-|-- server/
-|   |-- src/
-|   |   |-- config/       MongoDB connection
-|   |   |-- game/         Game, Room, Player, RoomManager, word logic
-|   |   |-- models/       Mongoose room model
-|   |   |-- routes/       Room REST API
-|   |   `-- index.js      Express and Socket.IO server
-|   |-- package.json
-|   `-- package-lock.json
-|-- package.json
-`-- README.md
-
-## Run locally
-
-### Backend
-
-In Terminal 1:
-
-```bash
-cd server
-npm install
-npm run dev
+## 🌐 Live Deployment & Links
+The app includes a home and room-configuration screen, a waiting room with invite code and player list, and a gameplay screen with canvas, chat, timer, hints, and leaderboard. See the [live app](https://skribbl-clone-6u0z.onrender.com) and [demo video](https://youtu.be/dsrWwDutcLw?si=jVqoMPMQlV90A0oH) for the current UI.
+| Service | Link | Description |
+| :--- | :--- | :--- |
+| **Frontend Application** | [https://skribbl-clone-6u0z.onrender.com](https://skribbl-clone-6u0z.onrender.com) | Production client deployed on Render |
+| **Backend API / Health** | [https://skribbl-clone-api-1gcx.onrender.com/api/health](https://skribbl-clone-api-1gcx.onrender.com/api/health) | Authoritative WebSocket & REST backend |
+| **Video Walkthrough** | [YouTube Demo Video](https://youtu.be/dsrWwDutcLw?si=jVqoMPMQlV90A0oH) | End-to-end gameplay & architecture tour |
+## Architecture overview
+---
+1. **Frontend:** React and Vite render the home, lobby, canvas, chat, and score screens. Axios calls the room REST API; the Socket.IO client connects to the game server.
+2. **Backend engine:** Node.js and Express provide room endpoints. The server owns room membership, game phases, turn order, timers, hints, word validation, and scoring.
+3. **Real-time communication:** Socket.IO room channels broadcast drawing, chat, player, and game-state events to connected players.
+## 📸 Application Showcase
+<div align="center">
+### 1. Room Lobby & Configuration UI
+*Create public/private rooms, invite friends via 6-character room codes or direct links, customize avatars, and configure draw time, rounds, and word modes.*
 ```
-
-The backend runs on `http://localhost:5000`. To enable database snapshots, create `server/.env` and set `MONGODB_URI`.
-
-### Frontend
-
-Create `client/.env` with:
-
-```env
-VITE_API_URL=http://localhost:5000
-```
-
-In Terminal 2:
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173`.
-
-## Author
-
-Designed and Developed by **Ayush Saxena** | [LinkedIn](https://www.linkedin.com/in/ayush-saxena-developer) | [GitHub](https://github.com/AyushCrafts-001/skribbl-clone)
+┌────────────────────────────────────────────────────────────────────────┐
